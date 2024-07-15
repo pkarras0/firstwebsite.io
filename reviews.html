@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<!-- Website: Mediterranean Recipe Books
+Author: P.Karras 7/14/24
+Colors: Blues, Whites, Ocean, Islands
+
+This is the Reviews Page...file name: reviews.html
+
+
+HTML pages
+  1. Home Page: index.html
+  2. About Page: about.html
+  3. Books/Cart Page: preview.books.html
+  4. Contact Us Page: contact.html
+  5. Reviews Page: review.html
+ CSS & Javascript pages
+  6. Med_style.css - applied to all website pages
+  7. MED_reviews.form.css - applied to reviews page
+  8. MED_Preview_with CART.css - applied to preview.books page
+  9. MED_payment_form.css - applied to payments page
+  10. MED_layout2.css - applied to all website pages
+  11. MED_clock_styles.css - applied to preview.books page
+  12. MED_clock.js (Javascript file for countdown clock) - applied to preview.books page
+  -->
+  
+  <html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+   	  <meta name="viewport" content=device-width, intital-scale=1.0">
+	  <meta name="author" content="P. Karras">
+	  <meta name="description content"="THE MEDITERANEAN RECIPE BOOK Reviews">
+	  <title>MRB Reviews</title> 
+	
+      <link rel="stylesheet" href="MED_style.css">
+	  <link rel="stylesheet" href="MED_layout2.css">
+	  <link rel="stylesheet" href="MED_reviews_form.css">
+
+</head>
+
+<body>
+    <header>
+    <h1>Mediterranean Recipe Books Reviews</h1>
+	<nav>
+	   <ul>
+	       <li>
+			<a href="index.html">Homepage</a>
+		  </li>
+		  <li>
+		    <a href="about.html">About<title="The Mediterranean Recipe 
+			Book website"></a>
+		  </li>
+		  <li>
+		    <a href="preview.books.html">Books</a>
+		  </li>
+		  <li>
+		    <a href="payment.html">Cart</a>
+		  </li>
+		  <li>
+		    <a href="contact.html">Contact Us</a>
+		  </li>
+		  <li>
+		    <a href="reviews.html">Reviews</a>
+		  </li>
+	   </ul>
+	</nav>
+	</header>
+	
+	 <hr>
+	 <hr>
+	<main>
+	We value your feedback.
+	</main>
+	<hr>
+	<hr>
+	
+	<img src="PHOTO_SNORKLERS.jpg" alt="Snorklers in Water" />
+     <hr>
+	 <hr>
+	<main>
+    Mediterranean Recipe Books will not share your contact information with third parties.
+    </main>
+	<hr>
+	<hr>
+
+	<section>
+	
+<!-- T7 Create and format a form with multiple field sets -->
+      <form id="survey" action="http://example.com/Mediteranean Books/recipe" method="post">
+         <fieldset id="custInfo">
+	         <legend>Customer Information</legend>
+			   <div class="formRow">
+				<label for="name">Name*</label>
+				<input names="custName" autofocus id="name" type="text" tabindex="1" placeholder="First & Last Name" required />
+                   <!-- <input name="name" autocomplete="true" or this can be ="false"  type="text"/? -->			  
+			  </div>
+			  
+<!-- T7 Include the following input types: text, date/time, radio buttons, spinners, range sliders, and check boxes -->
+		 
+				<div class="formRow">
+				 <label for="street">Street address</label>
+				 <input name="custStreet" id="street" type="text" placeholder="Street Address" />
+				</div>
+				 
+				 <div class="formRow">
+				 <label for="city">City</label>
+				 <input name="custCity" id="city" type="text" placeholder="City" />
+				 </div>
+				 
+				 <div class="formRow">
+				 <label for="state">State</label> 
+				 <input name="custState" id="state" type="text" placeholder="State" />
+				 </div>
+				 
+				 <div class="formRow">
+				  <label for="zip">Postal code</label>
+				 <input name="custZip" id="zip" type="text" placeholder="Zip"
+				    pattern="^\d{5}(-\d{4})?$" />
+				 </div>
+				 
+				 <div class="formRow">
+				  <label for="phone">Phone number</label>
+<!-- T7 Validate data with patterns and field lengths -->
+				 <input name="custPhone" id="phone" type="tel" placeholder="nnn-nnn-nnnn" 
+				     pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$" />
+				 </div>
+				 
+				 <div class="formRow">
+				 <label for="mail">E-mail*</label> 
+<!-- T7 Validate data with by having certain fields required -->				 
+<!-- T7 Include at least one input that is set for a mobile keyboard type (e.g. number, email, url, etc.) -->
+				 <input name="custEmail" id="email" type="email" placeholder="email@.com" required />
+				 </div>
+				 
+				 <div class="formRow">
+				 <label for="info">Where did you hear about us?<br />(select all that apply)</label>
+				 <select name="infoSrc" id="info" size="5"> multiple>
+					 <option value="internet">Internet</option>
+					 <option value="mag">Magazine</option>
+					 <option value="news">Newspaper</option>
+					 <option value="word">Fellow Foodie</option>
+					 <option value="other">Other</option>
+				  </select>	 
+				 </div>
+				 
+				 <div class="formRow">
+				   <label for="dish">Which book is your favorite?</label>
+				   <input name="favDish" id="dish" type="text" list="dishType" />
+<!-- T7 Include a data list and use it for input -->				 
+				   <datalist id="dishType">
+				     <option value="I love them all!">
+				     <option value="Book 1 Desserts">
+					 <option value="Book 2 Main Dishes">
+					 <option value="Book 3 Bread, Beverage & Specialty Items">
+					 <option value="Book 4 Sides & Salads">
+				   </datalist>
+				 </div>
+				 
+				 
+				 <div class="formRow">
+				   <label for="dineSpin">How many times per week do you utilize our recipe books?</label>
+<!-- T7 Validate data with patterns and field lengths -->
+				   <input name="dineOut" id="dineSpin" type="number" value="1" step="1" min="0" max="20" />
+		        </div>
+				 <input name="mailMe" id=mailCB" value="yes" type="checkbox" />
+				 <label for="mailCB">Add me to your mailing list for announcements and specials!</label>
+			 </fieldset>
+			 
+	     <fieldset id="expInfo">
+	     	 <legend>Share Your Experiences with Mediterranean Recipe Books</legend>
+			   <div class="formRow">
+			   <label for="pdate">Date of purchase</label>
+			   <input name="purchaseDate" id="pdate" type="date" />
+			   </div>
+			 
+			 <div class="formRow">
+			 <label for="order">Order type</label>
+
+<!-- T7 Create a selection list -->
+			 <select name="orderType" id="order">
+			   <option value="order1">One Book</option>
+			   <option value="order2">Multiple Books</option>
+			   <option value="order3" selected>Gift a Book</option>
+			   <option value="order4">Gift Multiple Books</option>
+			 </select>
+			 </div>
+			 
+			<div class="formRow">
+			 <label>Was your service friendly?</label>
+			  <fieldset class="optGroup"> 
+			   <label for="fYes">Yes</label>
+			   <input name="sFriend" id="fYes" value="yes" type="radio" />
+			   <label for="fNo">No</label>
+			   <input name="sFriend" id="fNo" value="no" type="radio" />
+			  </fieldset> 
+			 </div>
+			 
+			 <div class="formRow">
+			 <label>Was your order correct?</label>
+			 <fieldset class="optGroup">
+			   <label for="cYes">Yes</label>
+			   <input name="oCorrect" id="cYes" value="yes" type="radio" />
+			   <label for="cNo">No</label>
+			   <input name="oCorrect" id="cNo" value="no" type="radio" />
+			  </fieldset>
+			 </div>
+			 
+			 <div class="formRow">
+			 <label>Would you recommend to a friend?</label>
+			 <fieldset class="optGroup">
+			   <label for="rYes">Yes</label>
+			   <input name="rFriend" id="rYes" value="yes" type="radio" />
+			   <label for="rNo">No</label>
+			   <input name="rFriend" id="rNo" value="no" type="radio" />
+			  </fieldset>
+			 </div>
+			 
+			 <div class="formRow">
+			   <label for="rangebox">Rate the overall service</br>(0=poor; 10=great)</label>
+			 0
+            <input name="serviceRate" id="rangeBox" value="5" step="1" min="0" max="10" type="range" />
+			 10
+			 </div>
+
+<!-- T7 Create and format a text area -->
+			 <label for="commBox">Tell us more about your experience!</label>
+			 <textarea name="custExp" id="commBox"></textarea>
+
+<!-- T7 Create a submit and cancel/reset button -->	     
+             <div id="buttons">
+			   <input type="reset" value="Reset" />
+			 </div>
+			 <br />
+			  <div id="buttons">
+			   <input type="submit" value="Submit Review" />
+			 </div>
+			 
+		</fieldset>
+			
+			 <!--customize button: use this code 
+			 to insert an image or text marked as a paragraph -->
+			 
+			<!-- <button type="submit">
+			   <img src="PHOTO BLUE CRACKLE WATER.jpg" alt="" />
+			   <p>Place your order now</p>
+			 </button> 
+			 -->
+			 
+			
+       </form>
+	   
+   </section>
+   	<hr>
+	<main>
+
+	</main>
+	<hr>
+	
+		
+  
+	 <footer>
+	    <p>Copyright &copy The Mediterranean Recipe Books</p>
+		 <a href="#">Back To Top</a>
+	 </footer>

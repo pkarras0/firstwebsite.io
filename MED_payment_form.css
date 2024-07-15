@@ -1,0 +1,115 @@
+@charset "utf-8";
+
+
+/*Website: Mediterranean Recipe Books
+Author: P.Karras 7/14/24
+Colors: Blues, Whites, Ocean, Islands
+
+This is the MED_payment_form style sheet file name: MED_payment_form.css - applied to payments page
+
+
+HTML pages
+  1. Home Page: website.MEDITERRANEAN.html
+  2. About Page: about.html
+  3. Books/Cart Page: preview.books.html
+  4. Contact Us Page: contact.html
+  5. Reviews Page: review.html
+ CSS & Javascript pages
+  6. Med_style.css - applied to all website pages
+  7. MED_reviews_form.css - applied to the reviews page
+  8. MED_Preview_with CART.css - applied to preview.books page
+  9. MED_payment_form.css - applied to payments page
+  10. MED_layout2.css - applied to all website pages
+  11. MED_clock_styles.css - applied to preview.books page
+  12. MED_clock.js (Javascript file for countdown clock) - applied to preview.books page
+  */
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+  
+  *{
+	  font-family:'Poppins', sans-serif;
+	  margin:0; padding:0;
+	  box-sizing: border-box;
+	  outline: none; border: none;
+	  text-transform: capitalize;
+	  transition: all .2s linear;
+  }
+	  
+  .container{
+	  display: flex;
+	  justify-content: center;
+	  align-items: center;
+	  padding: 50px;
+	  min-height: 100vh;
+	  background: linear gradient(90deg, #2ecc71 60&, #27ae60 40.1%);
+	  padding-bottom: 70px;
+  }
+  
+    .container form {
+		padding: 20px;
+		width: 700px;
+		background: #fff;
+		box-shadow: 0 5px 10px rgba(0,0,0,.1);
+	}
+	
+	.container form .row {
+		display: flex;
+		flex-wrap: wrap;
+		gap:15px;
+	}
+		
+	.container form .row .col {
+		flex:1 1 250px;
+	}
+	
+	.container form .row .col .title .h3{
+		font-size: 20px;
+		color: #333;
+		padding-bottom: 5px;
+		text-transform: uppercase;
+	}
+	
+	.container form .row .col .inputBox{
+		margin:15px 0;
+	}
+	
+	.container form .row .col .inputBox span{
+		margin-bottom:10px;
+		display: block;
+	}
+	
+	.container form .row .col .inputBox input{
+		width: 100%;
+		border: 1px solid #ccc;
+		padding: 10px 15px;
+		font-size: 15px;
+		text-transform: none;
+	}
+	
+	.container form .row .col .inputBox input:focus{
+	border: 1px solid #000;
+	}
+	
+	.container form .row .col .flex .inputBox{
+	margin-top: 5px;
+	
+	}
+		
+	.container form .row .col .inputBox img{
+		height: 32px;
+		margin-top: 5px;
+		filter: drop-shadow(0 0 1px #000);
+	} 
+	
+	.container form .submit-btn{
+		width: 100%;
+		padding: 12px;
+		font-size: 17px;
+		background: #2795ae;
+		color: #fff;
+		margin-top: 5px;
+		cursor: pointer:
+	}
+	.container form .submit-btn: hover{
+		background: #2ecc71;
+	}

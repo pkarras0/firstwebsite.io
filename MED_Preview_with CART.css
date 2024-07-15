@@ -1,0 +1,106 @@
+@charset "utf-8";
+
+
+/*Website: Mediterranean Recipe Books
+Author: P.Karras 7/14/24
+Colors: Blues, Whites, Ocean, Islands
+
+This is the MED_Preview_with CART style sheet file name: MED_Preview_with CART - applied to the preview.books page
+
+
+HTML pages
+  1. Home Page: website.MEDITERRANEAN.html
+  2. About Page: about.html
+  3. Books/Cart Page: preview.books.html
+  4. Contact Us Page: contact.html
+  5. Reviews Page: review.html
+ CSS & Javascript pages
+  6. Med_style.css - applied to all website pages
+  7. MED_reviews_form.css - applied to the reviews page
+  8. MED_Preview_with CART.css - applied to preview.books page
+  9. MED_payment_form.css - applied to payments page
+  10. MED_layout2.css - applied to all website pages
+  11. MED_clock_styles.css - applied to preview.books page
+  12. MED_clock.js (Javascript file for countdown clock) - applied to preview.books page
+  */
+
+
+/* Body Header Style */
+
+body > section > main
+   display: block;
+   width: 100%;
+   
+   body {
+	   margin-left: auto;
+	   margin-right: auto;
+   }
+   
+   H2, main {
+	   text-align: center;
+	   margin-left: auto;
+	   margin-right: auto;
+   }
+
+
+   *{
+	   padding: 0;
+	   margin:0;
+   }
+   
+   
+/*T2: PSUEDO CLASSES/EL REFERENCES */
+/*T2: CONTEXTUAL/ATTRIBUTE SELECTORS */
+
+  .container {
+	  max-width: 1224px;
+	  width: 90%;
+	  margin: auto;
+	  padding: 40px 0;
+
+  }
+   
+   .title{
+	   margin-bottom: 2rem;
+   }
+   
+/*T3: GRID LAYOUT */
+  .photo-gallery {
+	 display: grid;
+/* T3: Handle overflow */
+	  grid-template-columns: 1fr 1fr;
+	  flex-direction: column;
+	  gap: 20px
+  }
+  
+  .column {
+	  display: grid;
+	  grid-template-columns: 80% 20%;
+	  flex-direction: column;
+	  gap: 20px
+  }
+  
+  .photo img {
+	  width: 100%;
+	  height: 100%;
+	  border-radius: 5px;
+	  object-fit: cover;
+  }
+  
+  .formRow cartSpin {
+	  
+  }
+  
+  
+  .formRow buttons {
+	  
+  }
+  
+/*T5: RESPONSIVE DESIGN @MEDIA OR FLEX/FLEXBOX */
+  @media(max-width: 768px)
+  {
+	  .photo-gallery 
+	  {
+		  flex-direction: column;
+       }
+  }

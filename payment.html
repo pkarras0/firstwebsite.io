@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<!-- Website: Mediterranean Recipe Books
+Author: P.Karras 7/14/24
+Colors: Blues, Whites, Ocean, Islands
+
+This is the Payment Page...file name: payment.html
+
+
+HTML pages
+  1. Home Page: index.html
+  2. About Page: about.html
+  3. Books/Cart Page: preview.books.html
+  4. Contact Us Page: contact.html
+  5. Reviews Page: review.html
+ CSS & Javascript pages
+  6. Med_style.css - applied to all website pages
+  7. MED_reviews.form.css - applied to reviews page
+  8. MED_Preview_with CART.css - applied to preview.books page
+  9. MED_payment_form.css - applied to payments page
+  10. MED_layout2.css - applied to all website pages
+  11. MED_clock_styles.css - applied to preview.books page
+  12. MED_clock.js (Javascript file for countdown clock) - applied to preview.books page
+  -->
+  
+  <html lang="en">
+  
+  <head>
+    <meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+   	  <meta name="viewport" content="device-width, intital-scale=1.0">
+	  
+	  <meta name="author" content="P. Karras">
+	  <meta name="description content"="MEDITERANEAN BOOK RECIPE BOOKS PAYMENTS PAGE">
+	  <title>MRB Payments</title> 
+	 
+	  <link rel="stylesheet" href="MED_style.css">
+      <link rel="stylesheet" href="MED_layout2.css">
+      <link rel="stylesheet" href="MED_payment_form.css">
+
+  </head>
+  
+    <!-- <body> -->
+   <section>
+   <header>
+    <h1>Mediterranean Recipe Books Purchase</h1>
+	
+<!-- T1: NAV HYPERTEXT LIST -->
+<!-- T5: OPTIONAL PULL DOWN MENU 
+	 <nav class="horizontal">
+		<a id="navicon" href="#"><img src="tf_navicon.png" alt="" /></a>
+		-->
+     <nav>
+	   <ul>
+	       <li>
+			<a href="index.html">Homepage</a>
+		  </li>
+		  <li>
+		    <a href="about.html">About<title="The Mediterranean Recipe 
+			Book website"></a>
+		  </li>
+		  <li>
+		    <a href="preview.books.html">Books</a>
+		  </li>
+		  <li>
+		    <a href="payment.html">Cart</a>
+		  </li>
+		  <li>
+		    <a href="contact.html">Contact Us</a>
+		  </li>
+		  <li>
+		    <a href="reviews.html">Reviews</a>
+		  </li>
+	   </ul>
+	</nav>
+</header>
+	
+</section>
+
+<hr>
+	 <hr>
+	<main>
+	We hope you enjoy our time honored traditions as much as we do.
+	</main>
+	<hr>
+	<hr>
+
+
+ <div class="container">
+	
+    <form action="">
+	
+	<div class="row">
+	
+	<div class="col"
+	  
+	     <h3 class="title">billing address</h3>
+	  <div class="inputBox">
+	  <span>full name</span>
+	  <input type="text" placeholder="Full Name">
+	</div>
+	 <div class="inputBox">
+	  <span>email</span>
+	  <input type="email" placeholder="example@example.com">
+	</div>
+	 <div class="inputBox">
+	  <span>address</span>
+	  <input type="text" placeholder="number - street - unit">
+	</div>
+	 <div class="inputBox">
+	  <span>city</span>
+	  <input type="text" placeholder="City">
+	</div>
+	
+	<div class="flex">
+	 <div class="inputBox">
+	  <span>state</span>
+	  <input type="text" placeholder="State" minlength="2">
+	</div>
+	 <div class="inputBox">
+	  <span>zip code</span>
+	  <input type="text" placeholder="11111">
+	</div>
+	</div>
+	
+	</div>
+	
+	
+	<div class="col"
+	  
+	     <h3 class="title">payment</h3>
+		 
+		 <div class="inputBox">
+	  <span>cards accepted</span>
+	  <img src="ICON_cc_payment.png" alt="">
+	</div> 
+		 
+		 
+	  <div class="inputBox">
+	  <span>name on card</span>
+	  <input type="text" placeholder="Full Name">
+	</div>
+	
+	 <div class="inputBox">
+	  <span>credit card number</span>	
+	  <input type="text" name=credit card number placeholder="1111-2222-3333-4444"
+	   minlength="14" maxlength="19">
+	</div>
+	
+	<div class="inputBox">
+	  <span>expiration month</span>
+	  <input list="expiration month" name="expiration month" placeholder="Month" required>
+          <datalist id="expiration month">
+            <option value="January"></option>
+            <option value="Febrary"></option>
+            <option value="March"></option>
+			<option value="April"></option>
+            <option value="May"></option>
+            <option value="June"></option>
+			<option value="July"></option>
+            <option value="August"></option>
+            <option value="September"></option>
+			<option value="October"></option>
+            <option value="November"></option>
+            <option value="Decemeber"></option>
+          </datalist>
+	</div>
+	
+	<div class="flex">
+	 <div class="inputBox">
+	  <span>expiration year</span>
+	  <input type="text" placeholder="2222" minlength="3" maxlength="4" required>
+	</div>
+	 <div class="inputBox">
+	  <span>CVV</span>
+	  <input type="text" placeholder="333" minlength="3" maxlength="4" required>
+	</div>
+	</div>
+	
+	</div>
+	</div>
+	
+	<input type="submit" value="Submit Purchase" class="submit-btn">
+	
+  </form>
+	
+</div> 
+		  <hr>
+	<hr>
+	<main>I want to be a member of Mediterranean Recipe Books <a href="contact.html"> Contact Us</a>.
+	</main>
+	<hr>
+	<hr>
+	
+	</body>
+	 <footer>
+	    <p>Copyright &copy The Mediterranean Recipe Books</p>
+		 <a href="#">Back To Top</a>
+	 </footer>
+</html>
+
+
+			
+	

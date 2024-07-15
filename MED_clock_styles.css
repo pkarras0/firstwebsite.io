@@ -1,0 +1,152 @@
+@charset "utf-8";
+
+
+/*Website: Mediterranean Recipe Books
+Author: P.Karras 7/14/24
+Colors: Blues, Whites, Ocean, Islands
+
+This is the MED_clock_styles style sheet file name: MED_clock_styles.css - applied to preview.books page
+
+
+
+HTML pages
+  1. Home Page: website.MEDITERRANEAN.html
+  2. About Page: about.html
+  3. Books/Cart Page: preview.books.html
+  4. Contact Us Page: contact.html
+  5. Reviews Page: review.html
+ CSS & Javascript pages
+  6. Med_style.css - applied to all website pages
+  7. MED_reviews_form.css - applied to the reviews page
+  8. MED_Preview_with CART.css - applied to preview.books page
+  9. MED_payment_form.css - applied to payments page
+  10. MED_layout2.css - applied to all website pages
+  11. MED_clock_styles.css - applied to preview.books page
+  12. MED_clock.js (Javascript file for countdown clock) - applied to preview.books page
+  */
+
+ /*  Segment14 font designed by Paul Flo Williams. Download at:
+   http://www.1001fonts.com/segment14-font.html#styles
+
+*/
+
+@font-face {
+   font-family: Segment14;
+   src: url('segment14.woff') format('woff'),
+        url('segment14.ttf') format('truetype');
+}
+
+
+/* Time Clock Styles */
+
+div#dateNow {
+   color: #2795ae;
+}
+
+
+/* Styles for the Countdown Clock */
+
+div#countdown {
+
+/* T3: Experiment with relative and absolute positioning - 
+  Absoulte did not look right so I chose to use relative but flex also worked*/
+  /* position: absolute; */
+  /*position: flex; */
+   postition: relative; 
+   bottom: 50px;
+   right: 15px;
+   width: 25%;
+   display: -webkit-flex;
+   display: flex;
+   -webkit-flex-flow: row nowrap;
+   flex-flow: row nowrap;
+
+}
+/* T3: BLOCK AND FLOAT EL */
+div#countdown div {
+   display: block;
+   text-align: center;
+   width: 1000%;
+   line-height: 1.2em;
+   font-size: 0.5em;
+   font-family: segment14, sans-serif;
+   color: white;
+   margin: 10px 10px;
+   color: white;
+   text-align: center;
+   text-shadow: 0px 0px 2px black, 0px 0px 4px black, -1px 1px 8px white, 
+                1px -1px 8px white, -1px 1px 12px white, 1px -1px 12px white;
+}
+
+div#countdown div span {
+   font-size: 1.70em; 
+}
+
+
+/* =============================================
+   Tablet and Desktop Styles: greater than 510px
+   =============================================
+*/
+@media only screen and (min-width:511px) {
+   }
+   
+   div#dateNow {
+      font-size: 0.9em;
+      line-height: 1em;
+   } 
+   
+   div#countdown {
+      font-size: 1.3em;
+   }
+   
+   footer address {
+      font-size: 0.6em;
+   }     
+}
+
+/* =============================================
+   Tablet and Desktop Styles: greater than 640px
+   =============================================
+*/
+@media only screen and (min-width:641px) {
+}
+   
+   div#dateNow {
+      font-size: 1em;
+      line-height: 1.1em;
+      top: 40px;
+   }   
+   
+   div#countdown  {
+      font-size: 1.5em;
+   }    
+   
+   footer address {
+      font-size: 0.8em;
+   }   
+}
+
+/* =============================================
+   Tablet and Desktop Styles: greater than 720px
+   =============================================
+*/
+@media only screen and (min-width: 721px) {
+}
+  
+   div#dateNow {
+      font-size: 1.1em;
+      line-height: 1.2em;
+      top: 40px;
+   }
+   
+   div#countdown {
+      font-size: 1.7em;
+   }      
+}
+
+/* =============================================
+   Tablet and Desktop Styles: greater than 1020px
+   =============================================
+*/
+@media only screen and (min-width: 1021px) { 
+}

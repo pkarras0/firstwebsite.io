@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<!-- Website: Mediterranean Recipe Books
+Author: P.Karras 7/14/24
+Colors: Blues, Whites, Ocean, Islands
+
+This is the Preview Books/Cart Page...file name: preview.books.html
+
+
+HTML pages
+  1. Home Page: index.html
+  2. About Page: about.html
+  3. Books/Cart Page: preview.books.html
+  4. Contact Us Page: contact.html
+  5. Reviews Page: review.html
+ CSS & Javascript pages
+  6. Med_style.css - applied to all website pages
+  7. MED_reviews.form.css - applied to reviews page
+  8. MED_Preview_with CART.css - applied to preview.books page
+  9. MED_payment_form.css - applied to payments page
+  10. MED_layout2.css - applied to all website pages
+  11. MED_clock_styles.css - applied to preview.books page
+  12. MED_clock.js (Javascript file for countdown clock) - applied to preview.books page
+  -->
+  
+  
+  <html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+   	  <meta name="viewport" content=device-width, intital-scale=1.0">
+	  <meta name="author" content="P. Karras">
+	  <meta name="description content"="THE MEDITERANEAN RECIPE BOOK PREVIEW">
+	  <title>MRB BOOKS CART</title> 
+	
+      <link rel="stylesheet" href="MED_style.css">
+	  <link rel="stylesheet" href="MED_layout2.css">
+	  <link rel="stylesheet" href="MED_preview_with CART.css"> 
+	  <link rel="stylesheet" href="MED_clock_styles.css">
+      <script src="MED_clock.js" defer></script>	
+	  
+</head>
+
+<body>
+    <header>
+    <h1>Preview Mediterranean Recipe Books</h1>
+<nav>
+	   <ul>
+	       <li>
+			<a href="index.html">Homepage</a>
+		  </li>
+		  <li>
+		    <a href="about.html">About<title="The Mediterranean Recipe 
+			Book website"></a>
+		  </li>
+		  <li>
+		    <a href="preview.html">Books</a>
+		  </li>
+		  <li>
+		    <a href="payment.html">Cart</a>
+		  </li>
+		  <li>
+		    <a href="contact.html">Contact Us</a>
+		  </li>
+		  <li>
+		    <a href="reviews.html">Reviews</a>
+		  </li>
+	   </ul>
+	</nav>
+
+	</header>
+	 <section>
+	 
+	 <h2>BOOK GALLERY</h2>
+	 <hr>
+	 <hr>
+	<main>
+	Choose from an array of books
+	</main>
+	<hr>
+	<hr>
+<br />
+	<body>
+
+	<main>
+		
+			<div class="column">
+ 
+
+     <div class="photo-gallery">
+	    <div class="photo">
+  <!-- <h2 class="title">Responsive Photo Gallery</h2> -->
+	     <figure> 
+		 <img src="PHOTO_BOOK 1.jpg" alt="Book 1 Cover"/>
+		 <figcaption>BOOK 1: Desserts</figcaption>
+        </div>
+		
+<div class="form">	 
+<div class="formRow">
+             <label for="cartSpin">How many books would you like?</label>
+				   <input name="cartAdd" id="cartSpin" type="number" value="1" step="1" min="0" max="20" />
+		        </div>    
+        </div>
+		
+	    <div class="photo">
+	       <figure> 
+		   <img src="PHOTO_BOOK 2.jpg" alt="Book 2 Cover"/>
+		    <figcaption>BOOK 2: Main Dishes</figcaption>
+        </div>
+	
+<div class="form">	 
+<div class="formRow">
+             <label for="cartSpin">How many books would you like?</label>
+				   <input name="cartAdd" id="cartSpin" type="number" value="1" step="1" min="0" max="20" />
+		        </div>    
+        </div>
+		
+	    <div class="photo">
+		   <figure> 
+	    <img src="PHOTO_BOOK 3.jpg" alt="Book 3 Cover"/>
+		 <figcaption>BOOK 3: Bread, Beverage & Specialty Items </figcaption>
+        </div>
+	   
+<div class="form">	 
+<div class="formRow">
+             <label for="cartSpin">How many books would you like?</label>
+				   <input name="cartAdd" id="cartSpin" type="number" value="1" step="1" min="0" max="20" />
+		        </div>    
+        </div>
+		
+	     <div class="photo">
+		   <figure> 
+	    <img src="PHOTO_BOOK 4.jpg" alt="Book 4 Cover"/>
+		 <figcaption>BOOK 4: Sides & Salads </figcaption>
+		 </div>
+		 
+<div class="form">	 
+<div class="formRow">
+             <label for="cartSpin">How many books would you like?</label>
+				   <input name="cartAdd" id="cartSpin" type="number" value="1" step="1" min="0" max="20" />
+		        </div>    
+        </div>
+		
+		<!--< <div class="photo">
+		   <figure> 
+	    img src="PHOTO_BOOK 5.jpg" alt="Book 5 Cover"/> -->
+	
+	<div class="photo">
+	  <fieldset>
+		  <div id="timeHeading">NEW Book Release January 1, 2025 Countdown</div>
+          <div id="dateNow">11/8/2021<br />2:45:12p.m.</div>
+		  <br />
+
+<!-- T9 Include a countdown function -->
+          <div id="countdown">
+            <div><span id="days">53</span><br />Days</div>
+            <div><span id="hrs">9</span><br />Hours</div>
+            <div><span id="mins">14</span><br />Minutes</div>
+            <div><span id="secs">48</span><br />Seconds</div>
+         </div>
+	  </fieldset>
+		 <figcaption>BOOK 5: Surprise 2025 </figcaption>
+		 </div>
+		 
+<div class="form">	 
+<div class="formRow">
+             <label for="cartSpin">How many books would you like?</label>
+				   <input name="cartAdd" id="cartSpin" type="number" value="1" step="1" min="0" max="20" />
+		        </div>  
+
+<br />
+		<div id="buttons">
+		<p>Your total is $$$.$$</p>
+
+			   <a href="payment.html"><button>Complete my purchase</button></a>
+			 </div>
+        </div>
+		
+	
+		<br />
+		<br />
+      </div>
+	</div>
+</div>		
+			
+		</section>
+	</main>
+
+			
+			
+		
+    <hr>
+	<hr>
+	<main>I want to be a member of Mediterranean Recipe Books <a href="contact.html"> Contact Us</a>.
+	</main>
+	<hr>
+	<hr>
+        
+		</body>
+	 <footer>
+	    <p>Copyright &copy The Mediterranean Recipe Books</p>
+		 <a href="#">Back To Top</a>
+	 </footer>
+
+
+</html>
